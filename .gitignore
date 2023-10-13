@@ -1,3 +1,5 @@
 __pycache__
 .vscode
 misc_scripts/pdf_creation/pdfs
+scratch.py
+scratch.ipynb
