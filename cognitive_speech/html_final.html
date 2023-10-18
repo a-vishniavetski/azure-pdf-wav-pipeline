@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF to TTS</title>
+
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            list-style-position: inside;
+        }
+        li {
+            background-color: #f2f2f2;
+            margin: 2px 0;
+            padding: 2px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center;">
+    <h1 style="font-size: 24px; margin: 20px;">PDF to Text-to-Speech Conversion</h1>
+
+    <p style="font-size: 18px;">Index search successful! Closest result to the keyword provided:</p>
+    
+    <div style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 10px; border-radius: 5px; margin: 10px;">
+        <p>Filename: <strong>{filename}</strong></p>
+        <p>Information: <strong>{information}</strong></p>
+        <p>Your audio file with the information voiced can be found at URL: <a href="{blob_url}">Download the WAV audio file</a></p>
+    </div>
+
+    <h2>Search again!</h2>
+
+    <h2 style="font-size: 18px; margin: 10px"> Information is available about: </h2>
+    
+    <ul style="text-align: center;">
+        {entries}
+    </ul>
+
+    <p>Type a keyword related to an architectural style. Azure Cognitive Search will return the closest match in the index, and Azure Cognitive Services will create an audio file with the related information.</p>
+
+    <form style="margin: 20px;">
+        <label for="keyword" style="font-size: 16px; margin-right: 10px;">Enter a keyword related to the architectural style or its name:</label>
+        <input type="text" id="keyword" name="keyword" style="font-size: 16px; padding: 5px;">
+        <input type="submit" value="Submit" style="font-size: 16px; padding: 5px 10px; background-color: #0074c2; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+    </form>
+</body>
+</html>

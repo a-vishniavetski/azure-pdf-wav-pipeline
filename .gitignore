@@ -1,7 +1,12 @@
 __pycache__
-.vscode
+
 misc_scripts/pdf_creation/pdfs
 scratch.py
 scratch.ipynb
 openssl-1.1.1u/
 deps.sh
+.python_packages
+.venv
+.vscode
+azure-functions-cli/
+SPEECH_LOG.txt
