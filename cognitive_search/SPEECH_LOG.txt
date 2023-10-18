@@ -1,0 +1,146 @@
+[414141]: 1790911ms SPX_DBG_TRACE_VERBOSE:  resource_manager.cpp:131 Created 'CSpxThreadService' as '303073113'
+[414141]: 1790911ms SPX_DBG_TRACE_VERBOSE:  resource_manager.cpp:131 Created 'CSpxThreadService' as '303073113'
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  usp_tts_engine_adapter.cpp:60 CSpxUspTtsEngineAdapter
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  resource_manager.cpp:131 Created 'CSpxUspTtsEngineAdapter' as '919101823'
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  resource_manager.cpp:131 Created 'CSpxDefaultSpeaker' as '853898539'
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  resource_manager.cpp:131 Created 'CSpxPullAudioOutputStream' as '853898539'
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  cloud_tts_engine_adapter.cpp:134 SetOutput
+[414141]: 1790912ms SPX_TRACE_INFO:  cloud_tts_engine_adapter.cpp:212 SetOutput: request format [riff-16khz-16bit-mono-pcm] has header, using raw format instead for streaming.
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:111 CSpxHandleTable::TrackHandle p=0x0x5617d8544878
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:121 CSpxHandleTable::TrackHandle class=ISpxSynthesizer, h=0x0x5617d8544878, p=0x0x5617d8544878, tot=2
+[414141]: 1790912ms SPX_DBG_TRACE_SCOPE_EXIT:  speechapi_c_factory.cpp:521 synthesizer_create_speech_synthesizer_from_config
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:111 CSpxHandleTable::TrackHandle p=0x0x5617d8544c48
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:121 CSpxHandleTable::TrackHandle class=ISpxNamedProperties, h=0x0x5617d8544c48, p=0x0x5617d8544c48, tot=4
+[414141]: 1790912ms SPX_DBG_TRACE_FUNCTION:  synthesizer.cpp:467 SetDisposing
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:180 CSpxHandleTable::StopTracking(h) h=0x0x5617d8543588
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:195 CSpxHandleTable::StopTracking(h) class=ISpxSynthesizer, h=0x0x5617d8543588, p=0x0x5617d8543588, tot=1
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:180 CSpxHandleTable::StopTracking(h) h=0x0x5617d8543958
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:195 CSpxHandleTable::StopTracking(h) class=ISpxNamedProperties, h=0x0x5617d8543958, p=0x0x5617d8543958, tot=3
+[414141]: 1790912ms SPX_DBG_TRACE_SCOPE_ENTER:  synthesizer.cpp:41 ~CSpxSynthesizer
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  create_object_helpers.h:78 SpxTerm: ptr=0x0x5617d8211c28
+[414141]: 1790912ms SPX_DBG_TRACE_SCOPE_ENTER:  usp_tts_engine_adapter.cpp:86 Term
+[414141]: 1790912ms SPX_DBG_TRACE_SCOPE_EXIT:  usp_tts_engine_adapter.cpp:86 Term
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  usp_tts_engine_adapter.cpp:65 ~CSpxUspTtsEngineAdapter: this=0x0x5617d8211be0
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  create_object_helpers.h:78 SpxTerm: ptr=0x0x5617d8352ad8
+[414141]: 1790912ms SPX_DBG_TRACE_SCOPE_ENTER:  thread_service.cpp:43 Term
+[414141]: 1790912ms SPX_DBG_TRACE_SCOPE_EXIT:  thread_service.cpp:43 Term
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  create_object_helpers.h:78 SpxTerm: ptr=0x0x5617d8350b08
+[414141]: 1790912ms SPX_DBG_TRACE_SCOPE_EXIT:  synthesizer.cpp:41 ~CSpxSynthesizer
+[414141]: 1790912ms SPX_DBG_TRACE_SCOPE_ENTER:  thread_service.cpp:43 Term
+[414141]: 1790912ms SPX_DBG_TRACE_SCOPE_EXIT:  thread_service.cpp:43 Term
+[414141]: 1790912ms SPX_DBG_TRACE_SCOPE_ENTER:  thread_service.cpp:43 Term
+[414141]: 1790912ms SPX_DBG_TRACE_SCOPE_EXIT:  thread_service.cpp:43 Term
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:111 CSpxHandleTable::TrackHandle p=0x0x7f0c1c046420
+[414141]: 1790912ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:121 CSpxHandleTable::TrackHandle class=CSpxAsyncOp<std::shared_ptr<ISpxSynthesisResult>>, h=0x0x7f0c1c046420, p=0x0x7f0c1c046420, tot=1
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  resource_manager.cpp:131 Created 'CSpxAudioDataStream' as '418301898'
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  null_audio_output.h:93 SetFormat is called with format 0x0x5617d84c5dd0
+[867700]: 1790912ms SPX_DBG_TRACE_FUNCTION:  synthesis_result.cpp:25 CSpxSynthesisResult
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  resource_manager.cpp:131 Created 'CSpxSynthesisResult' as '3874248'
+[867700]: 1790912ms SPX_TRACE_INFO:  thread_service.cpp:92 Started thread User with ID [53806ll]
+[867700]: 1790912ms SPX_TRACE_VERBOSE:  synthesizer.cpp:213 ExecuteSynthesis: synthesis started, request id: 52c7f41c4e9742dab3421ba2ffff2265; text: JOIN THE GLORIOUS EVOLUTION
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  synthesizer_timeout_management.cpp:32 SetTimeoutValues: RTF set to 2.00; frame timeout interval set to 3000 ms.
+[53806]: 1790912ms SPX_DBG_TRACE_SCOPE_ENTER:  synthesizer.cpp:1080 DispatchEvent task started...
+[53806]: 1790912ms SPX_DBG_TRACE_VERBOSE:  synthesizer.cpp:489 [0x5617d8544850]CSpxSynthesizer::FireResultEvent
+[53806]: 1790912ms SPX_DBG_TRACE_VERBOSE:  synthesizer.cpp:552 No listener connected to event
+[53806]: 1790912ms SPX_DBG_TRACE_SCOPE_EXIT:  synthesizer.cpp:1080 DispatchEvent task complete!
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  usp_tts_engine_adapter.cpp:92 Speak
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  usp_tts_engine_adapter.cpp:110 Speak: start to send synthesis request, request id : 52c7f41c4e9742dab3421ba2ffff2265, try: 0
+[867700]: 1790912ms SPX_TRACE_INFO:  synthesis_helper.h:270 Neither language nor voice is specified, use Jenny multilingual voice with language auto detection.
+[867700]: 1790912ms SPX_DBG_TRACE_FUNCTION:  synthesis_result.cpp:25 CSpxSynthesisResult
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  resource_manager.cpp:131 Created 'CSpxSynthesisResult' as '3874248'
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  usp_tts_engine_adapter.cpp:204 SSML sent to TTS cognitive service: <speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='http://www.w3.org/2001/mstts' xmlns:emo='http://www.w3.org/2009/10/emotionml' xml:lang='en-US'><voice name='en-US-JennyMultilingualNeural'>JOIN THE GLORIOUS EVOLUTION</voice></speak>
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  usp_tts_engine_adapter.cpp:501 UspInitialize: this=0x0x5617d834f1c0
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxNamedProperties::GetStringValue: this=0x0x005617d8544c48; name='SPEECH-SubscriptionKey'; value='******************************ad'
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxNamedProperties::GetStringValue: this=0x0x005617d834f210; name='AZAC-SDK-PROGRAMMING-LANGUAGE'; value='Python'
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxPropertyBagImpl::SetStringValue: this=0x0x005617d834f210; name='HttpHeader#User-agent'; value='SpeechSDK-Python/1.32.1 Linux Linux 5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UTC 2023 x86_64 5.15.90.1-microsoft-standard-WSL2'
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxNamedProperties::FindPrefix: this=0x0x005617d834f210; name='User-agent'; value='SpeechSDK-Python/1.32.1 Linux Linux 5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UTC 2023 x86_64 5.15.90.1-microsoft-standard-WSL2'
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  resource_manager.cpp:131 Created 'CSpxUspCallbackWrapper' as '710381509'
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxNamedProperties::GetStringValue: this=0x0x005617d8544c48; name='SPEECH-Region'; value='westeurope'
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxNamedProperties::GetStringValue: this=0x0x005617d8544c48; name='SPEECH-ProxyHostBypass'; value=''
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxNamedProperties::GetStringValue: this=0x0x005617d8544c48; name='OPENSSL_SINGLE_TRUSTED_CERT'; value=''
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  resource_manager.cpp:131 Created 'CSpxUspConnection' as '792041254'
+[867700]: 1790912ms SPX_TRACE_INFO:  usp_connection.cpp:473 Connect: entering...
+[867700]: 1790912ms SPX_TRACE_INFO:  usp_connection.cpp:490 Adding subscription key headers
+[867700]: 1790912ms SPX_TRACE_INFO:  usp_connection.cpp:525 Set a user defined HTTP header 'User-agent':'SpeechSDK-Python/1.32.1 Linux Linux 5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UTC 2023 x86_64 5.15.90.1-microsoft-standard-WSL2'
+[867700]: 1790912ms SPX_TRACE_INFO:  usp_connection.cpp:531 Set an underlying io option 'tcp_nodelay'
+[867700]: 1790912ms SPX_TRACE_INFO:  usp_connection.cpp:540 connectionUrl=wss://westeurope.tts.speech.microsoft.com/cognitiveservices/websocket/v1
+[867700]: 1790912ms SPX_DBG_TRACE_VERBOSE:  resource_manager.cpp:131 Created 'CSpxTelemetry' as '151041793'
+[867700]: 1790913ms SPX_DBG_TRACE_SCOPE_ENTER:  web_socket.cpp:216 CSpxWebSocket
+[867700]: 1790913ms SPX_DBG_TRACE_SCOPE_EXIT:  web_socket.cpp:216 CSpxWebSocket
+[867700]: 1790913ms SPX_DBG_TRACE_VERBOSE:  resource_manager.cpp:131 Created 'CSpxWebSocket' as '482598724'
+[867700]: 1790913ms SPX_TRACE_SCOPE_ENTER:  uws_web_socket.cpp:31 UwsWebSocket
+[867700]: 1790914ms SPX_TRACE_SCOPE_EXIT:  uws_web_socket.cpp:31 UwsWebSocket
+[867700]: 1790914ms SPX_TRACE_SCOPE_ENTER:  uws_web_socket.cpp:43 Initialize
+[867700]: 1790914ms SPX_TRACE_SCOPE_EXIT:  uws_web_socket.cpp:43 Initialize
+[867700]: 1790914ms SPX_TRACE_SCOPE_ENTER:  uws_web_socket.cpp:221 SetRequestHeader
+[867700]: 1790914ms SPX_TRACE_SCOPE_EXIT:  uws_web_socket.cpp:221 SetRequestHeader
+[867700]: 1790914ms SPX_TRACE_SCOPE_ENTER:  uws_web_socket.cpp:221 SetRequestHeader
+[867700]: 1790914ms SPX_TRACE_SCOPE_EXIT:  uws_web_socket.cpp:221 SetRequestHeader
+[867700]: 1790914ms SPX_TRACE_SCOPE_ENTER:  uws_web_socket.cpp:221 SetRequestHeader
+[867700]: 1790914ms SPX_TRACE_SCOPE_EXIT:  uws_web_socket.cpp:221 SetRequestHeader
+[867700]: 1790914ms SPX_TRACE_SCOPE_ENTER:  uws_web_socket.cpp:215 SetOption
+[867700]: 1790914ms SPX_TRACE_SCOPE_EXIT:  uws_web_socket.cpp:215 SetOption
+[867700]: 1790914ms SPX_TRACE_SCOPE_ENTER:  uws_web_socket.cpp:215 SetOption
+[867700]: 1790914ms SPX_TRACE_SCOPE_EXIT:  uws_web_socket.cpp:215 SetOption
+[867700]: 1790914ms SPX_TRACE_SCOPE_ENTER:  uws_web_socket.cpp:215 SetOption
+[867700]: 1790914ms SPX_TRACE_SCOPE_EXIT:  uws_web_socket.cpp:215 SetOption
+[867700]: 1790914ms SPX_TRACE_INFO:  thread_service.cpp:92 Started thread Background with ID [984295ll]
+[867700]: 1790914ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxPropertyBagImpl::SetStringValue: this=0x0x005617d8544c48; name='SPEECH-ConnectionUrl'; value='wss://westeurope.tts.speech.microsoft.com/cognitiveservices/websocket/v1'
+[984295]: 1790914ms SPX_TRACE_INFO:  web_socket.cpp:800 DoWork: open transport.
+[867700]: 1790914ms SPX_DBG_TRACE_VERBOSE:  usp_tts_engine_adapter.cpp:381 speech.config {"context":{"system":{"version":"1.32.1","name":"SpeechSDK","build":"Linux-x64"},"os":{"platform":"Linux","name":"Linux 5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UTC 2023 x86_64","version":"5.15.90.1-microsoft-standard-WSL2"}}}
+[984295]: 1790914ms SPX_TRACE_INFO:  web_socket.cpp:479 Start to open websocket. WebSocket: 0x20023d60, wsio handle: 0x20003680
+[867700]: 1790914ms SPX_DBG_TRACE_VERBOSE:  usp_tts_engine_adapter.cpp:441 speech.config='{"context":{"system":{"version":"1.32.1","name":"SpeechSDK","build":"Linux-x64"},"os":{"platform":"Linux","name":"Linux 5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UTC 2023 x86_64","version":"5.15.90.1-microsoft-standard-WSL2"}}}'
+[984295]: 1790914ms SPX_TRACE_SCOPE_ENTER:  uws_web_socket.cpp:149 Open
+[984295]: 1790914ms SPX_TRACE_INFO: AZ_LOG_INFO:  tlsio_openssl.c:2004 create_openssl_instance by TLS_method.
+[867700]: 1790914ms SPX_DBG_TRACE_VERBOSE:  usp_tts_engine_adapter.cpp:441 synthesis.context='{"synthesis":{"audio":{"outputFormat":"raw-16khz-16bit-mono-pcm","metadataOptions":{"visemeEnabled":false,"bookmarkEnabled":false,"wordBoundaryEnabled":false,"punctuationBoundaryEnabled":false,"sentenceBoundaryEnabled":false,"sessionEndEnabled":true}},"language":{"autoDetection":false}}}'
+[867700]: 1790914ms SPX_DBG_TRACE_VERBOSE:  usp_tts_engine_adapter.cpp:426 ssml <speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='http://www.w3.org/2001/mstts' xmlns:emo='http://www.w3.org/2009/10/emotionml' xml:lang='en-US'><voice name='en-US-JennyMultilingualNeural'>JOIN THE GLORIOUS EVOLUTION</voice></speak>
+[867700]: 1790914ms SPX_DBG_TRACE_VERBOSE:  usp_tts_engine_adapter.cpp:441 ssml='<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='http://www.w3.org/2001/mstts' xmlns:emo='http://www.w3.org/2009/10/emotionml' xml:lang='en-US'><voice name='en-US-JennyMultilingualNeural'>JOIN THE GLORIOUS EVOLUTION</voice></speak>'
+[984295]: 1790914ms SPX_TRACE_INFO: AZ_LOG_INFO:  tlsio_openssl.c:1826 load_system_store not implemented on this platform
+[984295]: 1790915ms SPX_TRACE_INFO: AZ_LOG_INFO:  tlsio_openssl.c:1859 CRL check enabled.
+[984295]: 1790965ms SPX_TRACE_SCOPE_EXIT:  uws_web_socket.cpp:149 Open
+[984295]: 1790965ms SPX_TRACE_INFO:  usp_connection.cpp:775 Create requestId  for messageType 0
+[984295]: 1791058ms SPX_TRACE_ERROR: AZ_LOG_ERROR:  uws_client.c:1239 Bad status (401) received in WebSocket Upgrade response
+[984295]: 1791058ms SPX_TRACE_SCOPE_ENTER:  uws_web_socket.cpp:247 OnWebSocketOpened
+[984295]: 1791058ms SPX_TRACE_ERROR:  web_socket.cpp:907 WS open operation failed with result=14(WS_OPEN_ERROR_BAD_RESPONSE_STATUS), code=401[0x00000191], time=2023-10-15T20:02:09.4530411Z
+[984295]: 1791059ms SPX_TRACE_INFO:  usp_connection.cpp:921 TS:146, TransportError: connection:0x20022a60, code=1, string=WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name.
+[984295]: 1791059ms SPX_DBG_TRACE_VERBOSE:  usp_tts_engine_adapter.cpp:926 Response: On Error: Code:1, Message: WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name..
+[984295]: 1791059ms SPX_DBG_TRACE_VERBOSE:  create_object_helpers.h:78 SpxTerm: ptr=0x0x7f0c2001f298
+[984295]: 1791059ms SPX_DBG_TRACE_SCOPE_ENTER:  usp_connection.cpp:145 ~CSpxUspConnection
+[984295]: 1791059ms SPX_DBG_TRACE_SCOPE_EXIT:  usp_connection.cpp:145 ~CSpxUspConnection
+[984295]: 1791059ms SPX_TRACE_SCOPE_EXIT:  uws_web_socket.cpp:247 OnWebSocketOpened
+[867700]: 1791059ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxPropertyBagImpl::SetStringValue: this=0x0x007f0c20002710; name='CancellationDetails_ReasonDetailedText'; value='WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.'
+[867700]: 1791059ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxPropertyBagImpl::SetStringValue: this=0x0x007f0c20002710; name='CancellationDetails_ReasonDetailedText'; value='WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.'
+[867700]: 1791059ms SPX_TRACE_ERROR:  usp_tts_engine_adapter.cpp:128 Synthesis cancelled by user, won't retry.
+[867700]: 1791059ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxPropertyBagImpl::SetStringValue: this=0x0x007f0c2001e368; name='RESULT-SynthesisBackend'; value='online (websocket)'
+[867700]: 1791059ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxPropertyBagImpl::SetStringValue: this=0x0x007f0c2001e368; name='RESULT-SynthesisFirstByteLatencyMs'; value='-1'
+[867700]: 1791059ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxPropertyBagImpl::SetStringValue: this=0x0x007f0c2001e368; name='RESULT-SynthesisFinishLatencyMs'; value='147'
+[867700]: 1791059ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxPropertyBagImpl::SetStringValue: this=0x0x007f0c2001e368; name='RESULT-SynthesisConnectionLatencyMs'; value='-1'
+[867700]: 1791059ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxPropertyBagImpl::SetStringValue: this=0x0x007f0c2001e368; name='RESULT-SynthesisNetworkLatencyMs'; value='-1'
+[867700]: 1791059ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxPropertyBagImpl::SetStringValue: this=0x0x007f0c2001e368; name='RESULT-SynthesisServiceLatencyMs'; value='-1'
+[867700]: 1791059ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxPropertyBagImpl::SetStringValue: this=0x0x007f0c2001e368; name='RESULT-SynthesisUnderrunTimeMs'; value='0'
+[867700]: 1791059ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxPropertyBagImpl::SetStringValue: this=0x0x007f0c2001e368; name='CancellationDetails_ReasonDetailedText'; value='WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.'
+[867700]: 1791059ms SPX_DBG_TRACE_VERBOSE:  pull_audio_output_stream.cpp:166 Signal End of Writing is called
+[867700]: 1791059ms SPX_DBG_TRACE_VERBOSE:  pull_audio_output_stream.cpp:166 Signal End of Writing is called
+[867700]: 1791059ms SPX_DBG_TRAcognitive_search/SPEECH_LOG.txtCE_FUNCTION:  synthesis_result.cpp:30 ~CSpxSynthesisResult
+[53806]: 1791059ms SPX_DBG_TRACE_SCOPE_ENTER:  synthesizer.cpp:1080 DispatchEvent task started...
+[53806]: 1791059ms SPX_DBG_TRACE_VERBOSE:  synthesizer.cpp:489 [0x5617d8544850]CSpxSynthesizer::FireResultEvent
+[53806]: 1791059ms SPX_DBG_TRACE_VERBOSE:  synthesizer.cpp:552 No listener connected to event
+[53806]: 1791059ms SPX_DBG_TRACE_SCOPE_EXIT:  synthesizer.cpp:1080 DispatchEvent task complete!
+[414141]: 1791059ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:111 CSpxHandleTable::TrackHandle p=0x0x7f0c20002700
+[414141]: 1791059ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:121 CSpxHandleTable::TrackHandle class=ISpxSynthesisResult, h=0x0x7f0c20002700, p=0x0x7f0c20002700, tot=2
+[414141]: 1791059ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:180 CSpxHandleTable::StopTracking(h) h=0x0x7f0c1c046420
+[414141]: 1791059ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:195 CSpxHandleTable::StopTracking(h) class=CSpxAsyncOp<std::shared_ptr<ISpxSynthesisResult>>, h=0x0x7f0c1c046420, p=0x0x7f0c1c046420, tot=0
+[414141]: 1791059ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:111 CSpxHandleTable::TrackHandle p=0x0x7f0c20002710
+[414141]: 1791059ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:121 CSpxHandleTable::TrackHandle class=ISpxNamedProperties, h=0x0x7f0c20002710, p=0x0x7f0c20002710, tot=4
+[414141]: 1791059ms SPX_DBG_TRACE_VERBOSE:  named_properties.h:478 ISpxNamedProperties::GetStringValue: this=0x0x007f0c20002710; name='CancellationDetails_ReasonDetailedText'; value='WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.'
+[414141]: 1791059ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:180 CSpxHandleTable::StopTracking(h) h=0x0x7f0c1c03e850
+[414141]: 1791059ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:195 CSpxHandleTable::StopTracking(h) class=ISpxSynthesisResult, h=0x0x7f0c1c03e850, p=0x0x7f0c1c03e850, tot=1
+[414141]: 1791059ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:180 CSpxHandleTable::StopTracking(h) h=0x0x7f0c1c03e860
+[414141]: 1791059ms SPX_DBG_TRACE_VERBOSE:  handle_table.h:195 CSpxHandleTable::StopTracking(h) class=ISpxNamedProperties, h=0x0x7f0c1c03e860, p=0x0x7f0c1c03e860, tot=3
+[414141]: 1791059ms SPX_DBG_TRACE_FUNCTION:  synthesis_result.cpp:30 ~CSpxSynthesisResult
+[414141]: 1791059ms SPX_TRACE_SCOPE_ENTER:  audio_data_stream.cpp:25 ~CSpxAudioDataStream
+[414141]: 1791059ms SPX_TRACE_SCOPE_EXIT:  audio_data_stream.cpp:25 ~CSpxAudioDataStream
+[984295]: 1791068ms SPX_DBG_TRACE_SCOPE_ENTER:  web_socket.cpp:221 ~CSpxWebSocket
+[984295]: 1791068ms SPX_DBG_TRACE_SCOPE_EXIT:  web_socket.cpp:221 ~CSpxWebSocket
+[984295]: 1791068ms SPX_TRACE_SCOPE_ENTER:  uws_web_socket.cpp:36 ~UwsWebSocket
+[984295]: 1791068ms SPX_TRACE_SCOPE_EXIT:  uws_web_socket.cpp:36 ~UwsWebSocket
