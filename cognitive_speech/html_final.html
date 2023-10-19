@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PDF to TTS</title>
+    <title>PDF to Speech</title>
 
     <style>
         ul {
@@ -29,8 +29,6 @@
         <p>Your audio file with the information voiced can be found at URL: <a href="{blob_url}">Download the WAV audio file</a></p>
     </div>
 
-    <h2>Search again!</h2>
-
     <h2 style="font-size: 18px; margin: 10px"> Information is available about: </h2>
     
     <ul style="text-align: center;">
@@ -41,8 +39,10 @@
 
     <form style="margin: 20px;">
         <label for="keyword" style="font-size: 16px; margin-right: 10px;">Enter a keyword related to the architectural style or its name:</label>
+        <input type="hidden" name="code" value="{FUNC_CODE}">
         <input type="text" id="keyword" name="keyword" style="font-size: 16px; padding: 5px;">
         <input type="submit" value="Submit" style="font-size: 16px; padding: 5px 10px; background-color: #0074c2; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
     </form>
+    
 </body>
 </html>
