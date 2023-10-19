@@ -68,8 +68,8 @@ if any([SEARCH_ACCESS_KEY is None,
 # CREATE FUNCTION APP
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 
-@app.route(route=f"http_tts_trigger")
-def http_tts_trigger(req: func.HttpRequest) -> func.HttpResponse:
+@app.route(route="pdf_to_speech", auth_level=func.AuthLevel.FUNCTION)
+def pdf_to_speech(req: func.HttpRequest) -> func.HttpResponse:
     """
     HTTP trigger function that generates speech from text and stores it in Azure Blob Storage.
     The function expects a keyword as a query parameter or in the request body.
@@ -405,25 +405,3 @@ def update_index() -> None:
                                                search_endpoint=SEARCH_ENDPOINT,
                                                search_key=SEARCH_ACCESS_KEY)
     print("-----Documents uploaded to index successfully.-----")
-
-
-@app.route(route="pdf_to_speech", auth_level=func.AuthLevel.FUNCTION)
-def pdf_to_speech(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('Python HTTP trigger function processed a request.')
-
-    name = req.params.get('name')
-    if not name:
-        try:
-            req_body = req.get_json()
-        except ValueError:
-            pass
-        else:
-            name = req_body.get('name')
-
-    if name:
-        return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
-    else:
-        return func.HttpResponse(
-             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
-             status_code=200
-        )
