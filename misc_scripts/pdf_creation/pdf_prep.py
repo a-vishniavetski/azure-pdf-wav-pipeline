@@ -25,8 +25,9 @@ def extract_entry_paragraphs(url: str) -> str:
                     preceding_p_tags.insert(0, tag)
 
             # Now, you can process or print the <p> tags
-            for p_tag in preceding_p_tags:
-                
+            for ind, p_tag in enumerate(preceding_p_tags):
+                if ind > 1:
+                    break
                 paragraphs.append(p_tag.text)
                 
 

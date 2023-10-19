@@ -18,22 +18,26 @@
     </style>
 </head>
 <body style="font-family: Arial, sans-serif; text-align: center;">
-    <h1 style="font-size: 24px; margin: 20px;">Keyword Not Found in the Index</h1>
+    <h1 style="font-size: 24px; margin: 20px;">PDF to Text-to-Speech Conversion</h1>
+    <h2 style="font-size: 18px; margin: 10px">Using Microsoft Azure Python SDK</h2>
+    <h2 style="font-size: 18px; margin: 10px">Using Azure Cognitive Search, Speech services, Storage Accounts, App Functions, as well as other SaaS and PaaS services.</h2>
 
-    <h2 style="font-size: 18px; margin: 10px"> Information is available about: </h2>
+    <h2 style="font-size: 24px; margin: 20px; color: #ff0000;">Keyword Not Found in the Index</h2>
+
+    <h2 style="font-size: 18px; margin: 10px; color: #ff4242;"> Information is available about: </h2>
     
     <ul style="text-align: center;">
         {entries}
     </ul>
 
     <h2 style="font-size: 18px;">Search again:</h2>
-    <p style="font-size: 18px;">Type a keyword related to an architectural style. Azure Cognitive Search will return the closest match in the index, and Azure Cognitive Services will create an audio file with the related information.</p>
+    <p style="font-size: 18px;">Type the name of an architectural style. Azure Cognitive Search will return the closest match in the index, and Azure Cognitive Services will create an audio file with the related information.</p>
 
     <form style="margin: 20px;">
-        <label for="keyword" style="font-size: 16px; margin-right: 10px;">Enter a keyword related to the architectural style or its name:</label>
+        <label for="keyword" style="font-size: 16px; margin-right: 10px;">Enter the name of the architectural style:</label>
         <input type="hidden" name="code" value="{FUNC_CODE}">
         <input type="text" id="keyword" name="keyword" style="font-size: 16px; padding: 5px;">
-        <input type="submit" value="Submit" style="font-size: 16px; padding: 5px 10px; background-color: #0074c2; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+        <input type="submit" value="Submit" style="font-size: 16px; padding: 5px 10px; background-color: #15ff00; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
     </form>
 
 </body>

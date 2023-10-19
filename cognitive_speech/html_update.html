@@ -17,27 +17,29 @@
             border: 1px solid #ddd;
         }
     </style>
+
 </head>
 <body style="font-family: Arial, sans-serif; text-align: center;">
+
     <h1 style="font-size: 24px; margin: 20px;">PDF to Text-to-Speech Conversion</h1>
     <h2 style="font-size: 18px; margin: 10px">Using Microsoft Azure Python SDK</h2>
     <h2 style="font-size: 18px; margin: 10px">Using Azure Cognitive Search, Speech services, Storage Accounts, App Functions, as well as other SaaS and PaaS services.</h2>
 
-    <p style="font-size: 18px;">Index search successful! Closest result to the keyword provided:</p>
-    
-    <div style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 10px; border-radius: 5px; margin: 10px;">
-        <p>Filename: <strong>{filename}</strong></p>
-        <p>Information: <strong>{information}</strong></p>
-        <p>Your audio file with the information voiced can be found at URL: <a href="{blob_url}">Download the WAV audio file</a></p>
-    </div>
+    <h2 style="font-size: 24px; margin: 20px; color: #00ff15;">The search index was updated!</h2>
 
-    <h2 style="font-size: 18px; margin: 10px"> Information is available about: </h2>
-    
+    <h3 style="font-size: 14px; margin: 10px"> Information is available about: </h3>
+
     <ul style="text-align: center;">
         {entries}
     </ul>
 
-    <p>Type the name of an architectural style. Azure Cognitive Search will return the closest match in the index, and Azure Cognitive Services will create an audio file with the related information.</p>
+    <form>
+        <input type="hidden" name="code" value="{FUNC_CODE}">
+        <input type="hidden" name="update" value="True">
+        <input type="submit" value="Update Azure Search Index From The Storage Account (Takes about 1 min!)" style="font-size: 13px; padding: 3px 8px; background-color: #006416; color: #fff; border: none; border-radius: 4px; cursor: pointer;">
+    </form>
+
+    <p style="font-size: 18px;">Type the name of an architectural style. Azure Cognitive Search will return the closest match in the index, and Azure Cognitive Services will create an audio file with the related information.</p>
 
     <form style="margin: 20px;">
         <label for="keyword" style="font-size: 16px; margin-right: 10px;">Enter the name of the architectural style:</label>
@@ -45,6 +47,6 @@
         <input type="text" id="keyword" name="keyword" style="font-size: 16px; padding: 5px;">
         <input type="submit" value="Submit" style="font-size: 16px; padding: 5px 10px; background-color: #15ff00; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
     </form>
-    
+
 </body>
 </html>
