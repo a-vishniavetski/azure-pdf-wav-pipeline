@@ -12,14 +12,12 @@
 - [Usage](#usage)
 
 ## Key Features
-
+Access to the application is available either through the simple front-end, or directly through the HTTP requests with corresponding query parameters.
 - **Document Processing**: Scan PDF documents, contained in Azure Storage Account, with Azure Document Intelligence
 
 - **Cognitive Search**: Create, Access, and Update a Cognitive Search Index containing scanned information.
 
 - **Speech Synthesis**: Query the search index to generate .WAV files with AI voicing the selected information.
-
-***A simple front-end is also provided:***
 
 <img src="https://github.com/a-vishniavetski/azure-pdf-wav-pipeline/assets/132013288/8797b982-3a07-4005-91f0-467db2c5a3b2" align="center">
 
@@ -82,5 +80,3 @@ An example of a deployed resource group:
 ***Optionally:***
 
 4. Update the search index using the corresponding button. The process takes some time, depending on the amount of documents in the storage.
-
-*Note: The whole process is also possible through manual https requests with corresponding query parameters*
