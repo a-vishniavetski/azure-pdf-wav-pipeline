@@ -14,7 +14,7 @@
 
 <img src="https://github.com/a-vishniavetski/azure-pdf-wav-pipeline/assets/132013288/8797b982-3a07-4005-91f0-467db2c5a3b2" align="center">
 
-## Technologies and Services
+## Technologies Used
 
 The following Azure technologies and services were used:
 
