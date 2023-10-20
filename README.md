@@ -32,7 +32,7 @@ The following Azure technologies and services were used:
 
 - **Application Insights**: For analyzing logs, stack traces, statistics of user access, and overall performance of the application.
 
-## Code navigation
+## Code Navigation
 `function_app` folder:
 * `function_app.py` is the application itself
 * `html_...` HTML pages to provide front-end for the app
