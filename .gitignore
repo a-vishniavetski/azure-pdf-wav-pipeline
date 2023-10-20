@@ -13,3 +13,5 @@ SPEECH_LOG.txt
 temp_local.settings.json
 temp_bashrc
 miscellaneous/
+temp/
+.vscode/
