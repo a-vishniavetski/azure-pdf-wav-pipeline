@@ -7,7 +7,7 @@
 
 - [Key Features](#key-features)
 - [Technologies used](#technologies-used)
-- [Installation, Configuration, Deployment](##installation,-configuration,-deployment)
+- [Configuration and Deployment](#Configuration-and-Deployment)
 - [Code Navigation](#code-navigation)
 - [Usage](#usage)
 
@@ -47,7 +47,7 @@ An example of a deployed resource group:
 
 <img src="https://github.com/a-vishniavetski/azure-pdf-wav-pipeline/assets/132013288/ceb76d76-abab-4116-8a45-cdd41b6072eb">
 
-## Installation, Configuration, Deployment
+## Configuration and Deployment
 > The repository is intended as a showcase, rather than as an installation source since the app uses Access Keys and Endpoints and does not yet implement Azure Active Directory or Azure Key Vault. The general guidelines, however, would be:
 1. Prepare all of the necessary Azure resources, such as *Storage Account(for PDFs), Search Service, Speech Service, Document Intelligence Service, App Service Plan, Function app* and optionally *Application Insights*.
 2. Download the contents of the `function_app` folder. It contains an Azure Function App ready for deployment, ***except for the environment variables necessary!***
