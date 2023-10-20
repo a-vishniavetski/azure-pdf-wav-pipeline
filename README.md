@@ -52,7 +52,7 @@ An example of a deployed resource group:
 1. Prepare all of the necessary Azure resources, such as *Storage Account(for PDFs), Search Service, Speech Service, Document Intelligence Service, App Service Plan, Function app* and optionally *Application Insights*.
 2. Download the contents of the `function_app` folder. It contains an Azure Function App ready for deployment, ***except for the environment variables necessary!***
 3. Configure a Function App project in the downloaded folder, using [*VS Code Azure Tools Extension Pack*](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack), or other preferred methods of interaction with Azure.
-4. Either through `local.settings.json` or Azure Portal set the necessary environment variables(everything than requires `os.environ.get()` in the Python code).
+4. Either through `local.settings.json` before the deployment, or Azure Portal after the deployment, set the necessary environment variables(everything than requires `os.environ.get()` in the Python code).
 5. *Optionally*: Debug the application using the debugger available in VS Code that interacts with the Azure Extension Pack.
 6. Deploy the application
 7. Check if the `FUNC_CODE` environment variable corresponds to the function code found in the *"Code + Test"* section in the Azure Portal -> Your App Service Plan -> Your App Function.
