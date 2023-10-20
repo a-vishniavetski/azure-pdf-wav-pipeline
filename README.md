@@ -7,7 +7,7 @@
 
 - [Key Features](#key-features)
 - [Technologies used](#technologies-used)
-- [Installation, Configuration, Deployment](#Installation,-Configuration,-Deployment)
+- [Installation, Configuration, Deployment](##installation-configuration-deployment)
 - [Code Navigation](#code-navigation)
 - [Usage](#usage)
 
