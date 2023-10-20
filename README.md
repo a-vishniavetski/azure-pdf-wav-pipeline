@@ -1,5 +1,5 @@
 
-<img src="https://github.com/a-vishniavetski/azure-pdf-wav-pipeline/assets/132013288/cf9256aa-dbc2-43c8-a924-ad7f4ada501d" alt="Aimeos logo" title="Aimeos" align="right" height="50"/>
+<img src="https://github.com/a-vishniavetski/azure-pdf-wav-pipeline/assets/132013288/cf9256aa-dbc2-43c8-a924-ad7f4ada501d" alt="Aimeos logo" title="Aimeos" align="right"/>
 
 # Document Processing and Text-to-Speech synthesis in Microsoft Azure Cloud
 Using Azure Cognitive Search, Speech services, Storage Accounts, App Functions, as well as other SaaS and PaaS services.
