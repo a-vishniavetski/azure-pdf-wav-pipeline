@@ -7,6 +7,7 @@
 
 - [Key Features](#key-features)
 - [Technologies used](#technologies-used)
+- [Installation, Configuration, Deployment](#Installation,-Configuration,-Deployment)
 - [Code Navigation](#code-navigation)
 - [Usage](#usage)
 
@@ -30,6 +31,8 @@ The following Azure technologies and services were used:
 
 - **App Functions**: To create a cloud-based environment, configured to run the application.
 
+- **App Service Plan**: To contain the App Function
+
 - **Cognitive Search**: For efficient keyword-based document retrieval.
 
 - **Speech Services**: For creating .WAV files voicing the retrieved information.
@@ -40,12 +43,30 @@ The following Azure technologies and services were used:
 
 - **Application Insights**: For analyzing logs, stack traces, statistics of user access, and overall performance of the application.
 
-## Code Navigation
-`function_app` folder:
-* `function_app.py` is the application itself
-* `html_...` HTML pages to provide front-end for the app
+An example of a deployed resource group:
 
-`miscellaneous` folder: Contains Azure-unrelated scripts, that can be used to web-scrape Wikipedia and prepare the PDF documents for the upload to the Storage Account.
+<img src="https://github.com/a-vishniavetski/azure-pdf-wav-pipeline/assets/132013288/ceb76d76-abab-4116-8a45-cdd41b6072eb">
+
+## Installation, Configuration, Deployment
+> The repository is intended as a showcase, rather than as an installation source since the app uses Access Keys and Endpoints and does not yet implement Azure Active Directory or Azure Key Vault. The general guidelines, however, would be:
+1. Prepare all of the necessary Azure resources, such as *Storage Account(for PDFs), Search Service, Speech Service, Document Intelligence Service, App Service Plan, Function app* and optionally *Application Insights*.
+2. Download the contents of the `function_app` folder. It contains an Azure Function App ready for deployment, ***except for the environment variables necessary!***
+3. Configure a Function App project in the downloaded folder, using [*VS Code Azure Tools Extension Pack*](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack), or other preferred methods of interaction with Azure.
+4. Either through `local.settings.json` or Azure Portal set the necessary environment variables(everything than requires `os.environ.get()` in the Python code).
+5. *Optionally*: Debug the application using the debugger available in VS Code that interacts with the Azure Extension Pack.
+6. Deploy the application
+7. Check if the `FUNC_CODE` environment variable corresponds to the function code found in the *"Code + Test"* section in the Azure Portal -> Your App Service Plan -> Your App Function.
+
+## Code Navigation
+- `function_app`
+  - `function_app.py`: The application code
+  - `html_initial/final/fail/update`: HTML pages to provide front-end for the app
+  - `requirements.txt`: List of packages for the Python environment
+  - `host.json`: Azure configuration file
+- `miscellaneous`
+  - `pdfs`
+    - Examples of the PDF with information, that can be uploaded to blob storage
+  - `architecture_wikipedia_scraper.py`: Script to web-scrape Wikipedia and create PDF files, that can be uploaded to the Storage Account. **Azure unrelated.**
 
 ## Usage
 
