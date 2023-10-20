@@ -62,7 +62,10 @@ if any([SEARCH_ACCESS_KEY is None,
         SPEECH_STORAGE_STRING is None,
         SPEECH_ACCESS_KEY is None,
         SPEECH_LOCATION is None,
-        FUNCTION_ACCESS_CODE is None]):
+        FUNCTION_ACCESS_CODE is None,
+        DI_KEY is None,
+        DI_ENDPOINT is None,
+        STORAGE_STRING is None]):
     raise ValueError("Missing environment variables. Cannot proceed.")
 
 # CREATE FUNCTION APP
@@ -80,7 +83,7 @@ def pdf_to_speech(req: func.HttpRequest) -> func.HttpResponse:
     keyword_for_search = req.params.get('keyword')  # the keyword to search for in the search index
     index_update_flag = req.params.get('update')  # if set to "true", the search index will be updated
 
-    # PREPARE THE HTML FORMS
+    # ------------------------------ HTML FOR THE FRONT-END ------------------------------
     HTML_INITIAL_FORM = ""
     HTML_FINAL_FORM = ""
     HTML_FAIL_FORM = ""
@@ -104,12 +107,11 @@ def pdf_to_speech(req: func.HttpRequest) -> func.HttpResponse:
         HTML_UPDATE_FORM = HTML_UPDATE_FORM.replace("{entries}", existing_index_entries)
         HTML_UPDATE_FORM = HTML_UPDATE_FORM.replace("{FUNC_CODE}", FUNCTION_ACCESS_CODE)
     
+    # ------------------------------------------------------------------------------------
+
     if index_update_flag:
-        try:
-            update_index()
-            return func.HttpResponse(HTML_UPDATE_FORM, status_code=200, mimetype="text/html")
-        except:
-            return func.HttpResponse("Index update failed.", status_code=500)
+        update_index()
+        return func.HttpResponse(HTML_UPDATE_FORM, status_code=200, mimetype="text/html")
             
     if not keyword_for_search:
         try:
@@ -136,12 +138,12 @@ def pdf_to_speech(req: func.HttpRequest) -> func.HttpResponse:
             audio_data_bytes = synthesize_speech_stream(text_to_speech=text_to_speech)
 
             # UPLOAD THE WAV FILE TO AZURE BLOB STORAGE
-            blob_url = send_speech_to_storage(filename, audio_data_bytes)
+            speech_blob_url = send_speech_to_storage(filename, audio_data_bytes)
             
             # PREPARE THE HTML PAGE
             HTML_FINAL_FORM = HTML_FINAL_FORM.replace("{filename}", filename)
             HTML_FINAL_FORM = HTML_FINAL_FORM.replace("{information}", text_to_speech)
-            HTML_FINAL_FORM = HTML_FINAL_FORM.replace("{blob_url}", blob_url)
+            HTML_FINAL_FORM = HTML_FINAL_FORM.replace("{blob_url}", speech_blob_url)
 
             return func.HttpResponse(HTML_FINAL_FORM, status_code=200, mimetype="text/html")
     else:
