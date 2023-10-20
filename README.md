@@ -1,8 +1,4 @@
-
-
-
 <img src="https://github.com/a-vishniavetski/azure-pdf-wav-pipeline/assets/132013288/f919ade1-95b2-4fc8-95ce-52e5389b8529" align="right" height="75">
-
 
 # Document Processing and Text-to-Speech synthesis in Microsoft Azure Cloud
 Using Azure Cognitive Search, Speech services, Storage Accounts, App Functions, as well as other SaaS and PaaS services.
