@@ -2,6 +2,14 @@
 
 # Cloud Speech Synthesis from scanned documents on Azure platform
 > A Cloud-deployed python application, that can process PDF documents and create .WAV files with information extracted.
+
+## Contents
+
+- [Key Features](#key-features)
+- [Technologies used](#technologies-used)
+- [Code Navigation](#code-navigation)
+- [Usage](#usage)
+
 ## Key Features
 
 - **Document Processing**: Scan PDF documents, contained in Azure Storage Account, with Azure Document Intelligence
