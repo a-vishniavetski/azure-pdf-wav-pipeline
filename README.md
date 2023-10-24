@@ -5,16 +5,16 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Contents
+## Navigation
 
-- [Key Features](#key-features)
+- [Overview](#Overview)
 - [Technologies used](#technologies-used)
 - [Configuration and Deployment](#Configuration-and-Deployment)
 - [Code Navigation](#code-navigation)
 - [Usage](#usage)
 - [License](#license)
 
-## Key Features
+## Overview
 Access to the application is available either through the simple front-end, or directly through the HTTP requests with corresponding query parameters.
 - **Document Processing**: Scan PDF documents, contained in Azure Storage Account, with Azure Document Intelligence
 
