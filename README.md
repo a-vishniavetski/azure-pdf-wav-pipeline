@@ -3,6 +3,8 @@
 # Cloud Speech Synthesis from scanned documents on Azure platform
 > A Cloud-deployed python application, that can process PDF documents and create .WAV files with information extracted.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Contents
 
 - [Key Features](#key-features)
@@ -10,6 +12,7 @@
 - [Configuration and Deployment](#Configuration-and-Deployment)
 - [Code Navigation](#code-navigation)
 - [Usage](#usage)
+- [License](#license)
 
 ## Key Features
 Access to the application is available either through the simple front-end, or directly through the HTTP requests with corresponding query parameters.
@@ -80,3 +83,6 @@ An example of a deployed resource group:
 ***Optionally:***
 
 4. Update the search index using the corresponding button. The process takes some time, depending on the amount of documents in the storage.
+
+## License
+The application is licensed under the terms of the MIT Open Source license and is available for free for any purposes.
